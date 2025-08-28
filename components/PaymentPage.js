@@ -324,7 +324,7 @@ const pay = async (amount) =>{
             {/* Selling Juices to Raise Funds */}
 
             {/* step455: now we will display the following below the profile picture there.  */}
-            Buy "{username}" a juice🧃 and support here!
+            Buy &quot;{username}&quot; a juice🧃 and support here!
         </div>
         <div className='text-slate-400'>
             {/* 979 members • 82 posts • $14679/release */}
@@ -380,7 +380,7 @@ const pay = async (amount) =>{
 
                         {/* step373: see the useractions.js page for a small important correction there for the messages being displayed. */}
 
-                        <span>{p.name} donated <span className='font-bold'>₹{p.amount}</span> with a message "{p.message}"</span>
+                        <span>{p.name} donated <span className='font-bold'>₹{p.amount}</span> with a message &quot;{p.message}&quot;</span>
                         {/* <span>Suraj donated <span className='font-bold'>₹30</span> with a message "I support you bro ❤️"</span> */}
                     </li>
                     ))}

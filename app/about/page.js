@@ -6,6 +6,7 @@
 import React from 'react';
 // Import Head from next/head for managing document head elements (like title, meta tags)
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Define the About component as a functional component
 const About = () => {
