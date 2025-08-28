@@ -25,6 +25,9 @@ export default function RootLayout({ children }) {
   return (
     // This extra suppress and all came from deepseek due to some tree hydration error and warning that was coming in the console there on the browser.
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
+      </head>
 
       {/* step164: lets give the background color we gave to Navbar and all below to the "whole body itself now" so that it remains this only always and never and nowhere appears white even by mistake : so we removed it from there and pasted it here now. */}
       <body className="[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] text-white" suppressHydrationWarning>
