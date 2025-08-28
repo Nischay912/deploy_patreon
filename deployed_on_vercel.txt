@@ -1,0 +1,11 @@
+I made a mongo uri env now as i have to deploy it : so we replace localhost:27017 that was in db folder to ${process.env.MONGO_URI} .
+
+And when we put environment variables then we replace it with the connection string of the mongoDB atlas.
+
+Also then we create a new oAuth application there with host name and all as "getmeajuice.vercel.app" and all there and fet new github id secret from there and then put it when deploying there ; whereas keep the localhost:3000 vala oAuth application ka id secret in vs code ka env file.
+
+So , now we have seperate key secret for development and deployment both.
+
+Then in deployment also replace all the localhost:3000 with the new domain "getmeajuice.vercel.app" when setting up env variables when deploying.
+
+Now we are all set to deploy it there now.
