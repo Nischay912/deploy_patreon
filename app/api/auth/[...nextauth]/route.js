@@ -22,12 +22,6 @@ export const authOptions = NextAuth({
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
-  // This property tells NextAuth.js to trust the host provided by Vercel.
-  // It's essential for seamless deployments on platforms with dynamic URLs.
-  ...(process.env.VERCEL_ENV && {
-      trustHost: true,
-  }),
-
   // step198: we now copy the below code after searching callbacks in NextAuth there : We have copied code of SignIn callback here : which allows us to save the data of signed in user to the database ; then we use this signIn callback code below ; in NextAuth, we can define functions that run at certain events (like sign-in, session creation, redirect, etc.) using "callbacks"
   callbacks: {
 
