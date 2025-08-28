@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 const connectDb = async () => {
   try {
     // step240: update the database name from "test" of documentation code to "juice" database that we want to connect to here now.
-    const conn = await mongoose.connect(`mongodb://localhost:27017/juice`, { 
+    const conn = await mongoose.connect(`${process.env.MONGO_URI}`, { 
       useNewUrlParser: true,
     });
     console.log(`MongoDB Connected: ${conn.connection.host}`);
