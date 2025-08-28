@@ -1,0 +1,3 @@
+Install : "npm install next-auth" in the terminal there.
+
+Then make a "SessionWrapper.js" file in components folder.
